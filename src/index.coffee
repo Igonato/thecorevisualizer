@@ -69,7 +69,7 @@ germanClassKeyMap =
 	BracketOpen: 'ß'
 	BracketClose: '´'
 	Equals: '+'
-	
+
 
 keyClassMap = {}
 keyClassMap[v] = k for k, v of classKeyMap
@@ -931,7 +931,7 @@ ga('send', 'pageview');
 							do renderContainer
 				n = 0
 
-				prefix = "hotkeys/#{if keyboard is 'USQwerty' then '' else keyboard + '/'}"
+				prefix = "hotkeys/#{ keyboard + '/'}"
 
 				for code in TheCore.layoutCodes
 					path = "#{prefix}#{TheCore.layoutCodeToFileName(code)}"
